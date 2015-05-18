@@ -45,9 +45,11 @@
                     return '<a href="#' + page + '">' + page + '</a>';
                 }
             });
+
     var carousel = $('.jcarousel');
 
     carousel.swipe({
+    	excludedElements:['button', 'input', 'select', 'textarea', '.noSwipe'],
         swipeLeft: function(event, direction, distance, duration, fingerCount) {
         	carousel.jcarousel('scroll', '+=1');
         	console.log ("Swipe left");
