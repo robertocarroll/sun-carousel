@@ -6,7 +6,6 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var sass = require('gulp-ruby-sass');
-var htmlmin = require('gulp-htmlmin');
 
 // Concatenate JS Files
 gulp.task('scripts', function() {
