@@ -5,6 +5,8 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var sass = require('gulp-ruby-sass');
+var htmlmin = require('gulp-htmlmin');
 
 // Concatenate JS Files
 gulp.task('scripts', function() {
@@ -14,5 +16,20 @@ gulp.task('scripts', function() {
       	 .pipe(uglify())
       	 .pipe(gulp.dest('build/javascripts'));      
 });
+
+gulp.task('sass', function() {
+    return sass('styles/style.scss', {style: 'compressed'})
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('build/css'));
+});
+
+
+gulp.task('watch', function() {
+  // Watch .js files
+  gulp.watch('javascripts/*.js', ['scripts']);
+  // Watch .scss files
+  gulp.watch('styles/*.scss', ['sass']);
+});
+
 // Default Task
-gulp.task('default', ['scripts']);
+gulp.task('default', ['scripts','sass','watch']);
