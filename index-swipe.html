@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive Carousel for The Sun</title>
+
+        <!-- Shared assets -->
+
+        <script type="text/javascript" src="javascripts/vendor/jquery/jquery.js"></script>
+
+         <script type="text/javascript" src="javascripts/vendor/hammer.min.js"></script>
+
+
+    </head>
+    <body>
+    <div class="wrapper" id="myElement">
+<a class="image-test" href="http://www.thesun.co.uk/sol/homepage/sport/football/6461500/My-Ed-tells-me-a-rest-will-help-Oscar-shine.html"><img src="http://img.thesun.co.uk/aidemitlum/archive/02346/01_18094921_d7aae_2346200al.jpg" alt="My Ed tells me a  rest will help Oscar shine"></a>
+    </div>
+
+     <script>
+
+     var myElement = document.getElementById('myElement');
+
+     	var mc = new Hammer(myElement);
+
+				// listen to events...
+				mc.on("swipeleft swiperight", function(ev) {
+				    console.log (ev.type +" gesture detected.");
+				});
+
+
+     </script>   
+
+    </body>
+</html>

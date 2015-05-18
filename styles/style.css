@@ -1,0 +1,72 @@
+
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 Helvetica, Arial, sans-serif;
+    color: #4E443C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+  text-decoration: none;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+		width: 90%;
+    max-width: 1000px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+.slide-title {
+	font-size: 16px;
+	text-align: left;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-top: 4px;
+	line-height: 1.35em;
+}
+
+.slide-title a {
+	text-decoration: none; 
+}
+
+.jcarousel-control-prev, .jcarousel-control-next {
+		top: 45% !important;
+	}
+
+.jcarousel-pagination {
+	width: 80%;
+	text-align: center;
+}	
+	
