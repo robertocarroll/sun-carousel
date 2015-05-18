@@ -45,5 +45,23 @@
                     return '<a href="#' + page + '">' + page + '</a>';
                 }
             });
+    var carousel = $('.jcarousel');
+
+    carousel.swipe({
+        swipeLeft: function(event, direction, distance, duration, fingerCount) {   
+            carousel.jcarousel('scroll', '+=1');
+            console.log ("Swipe left");
+        },
+        swipeRight: function(event, direction, distance, duration, fingerCount) {
+            carousel.jcarousel('scroll', '-=1');
+            console.log ("Swipe right");
+        },
+       threshold:0
+    }); 
+
+    $(function() {
+		   FastClick.attach(document.body);
+		});     
+
     });
 })(jQuery);
