@@ -14,3 +14,7 @@ $('#tabs-content').addClass('js');
 		.royalSlider > YOUR_SLIDE_SELECTOR {
     /* CSS styles to slides when JS isn't running /
 }
+
+
+https://github.com/jsor/jcarousel/issues?utf8=%E2%9C%93&q=is%3Aissue+link+swipe+
+https://github.com/jsor/jcarousel/issues/666
