@@ -17,6 +17,9 @@
 
                 carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
             })
+            .on('jcarousel:createend', function() {
+            		$( ".fade-in" ).fadeIn( "slow" );
+    				})
             .jcarousel({
 	                wrap: 'circular',
 			            transitions: Modernizr.csstransitions ? {
@@ -25,6 +28,7 @@
 	                easing:       'ease'
 	            } : false
             });
+           
 
         $('.jcarousel-control-prev')
             .jcarouselControl({
