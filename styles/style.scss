@@ -70,6 +70,15 @@ a {
 
 .slide-title a {
 	text-decoration: none; 
+	opacity: 1;
+}
+
+.jcarousel li a {
+	opacity: 1;
+}
+
+.jcarousel li a:hover {
+	opacity: 0.9;
 }
 
 .jcarousel-wrapper {
@@ -127,6 +136,10 @@ a {
     -moz-border-radius: 30px;
     border-radius: 30px;
 
+}
+
+a.jcarousel-control-prev:hover, .jcarousel-control-next:hover {
+	@include alpha-attribute('background-color', rgba(black, 0.9), white);
 }
 
 .jcarousel-control-prev {
