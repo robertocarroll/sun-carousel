@@ -1,5 +1,7 @@
 (function($) {
     $(function() {
+    		$('.no-js').addClass('jcarousel').removeClass('no-js');
+
         var jcarousel = $('.jcarousel');
 
         jcarousel
@@ -52,11 +54,9 @@
     	excludedElements:['button', 'input', 'select', 'textarea', '.noSwipe'],
         swipeLeft: function(event, direction, distance, duration, fingerCount) {
         	carousel.jcarousel('scroll', '+=1');
-        	console.log ("Swipe left");
         },
         swipeRight: function(event, direction, distance, duration, fingerCount) {
 					carousel.jcarousel('scroll', '-=1');
-					console.log ("Swipe right");
         },
        threshold:0
     });

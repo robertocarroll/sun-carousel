@@ -41,6 +41,22 @@ a {
     margin: auto;
 }
 
+
+.jcarousel-wrapper > .no-js > ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+.jcarousel-wrapper > .no-js > ul > li {
+   padding-bottom: 20px;
+}
+
+.jcarousel-wrapper > .no-js > ul > li > a > img {
+		width: 100%;
+		max-width: 500px;
+	}
+
+
 .slide-title {
 	padding-left: 5px;
 	padding-right: 5px;
