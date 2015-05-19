@@ -151,7 +151,7 @@ a {
     margin: 0;
 }
 
-.jcarousel-pagination a {
+.jcarousel-pagination span {
     text-decoration: none;
     display: inline-block;
     font-size: 11px;
@@ -169,7 +169,7 @@ a {
     box-shadow: 0 0 2px #4E443C;
 }
 
-.jcarousel-pagination a.active {
+.jcarousel-pagination span.active {
     @include alpha-attribute('background-color', rgba(black, 0.5), white);
     color: #fff;
 }
