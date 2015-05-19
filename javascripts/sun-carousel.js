@@ -1,4 +1,4 @@
-(function($) {
+(function($, Modernizr) {
     $(function() {
     		$('.no-js').addClass('jcarousel').removeClass('no-js');
 
@@ -18,7 +18,12 @@
                 carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
             })
             .jcarousel({
-                wrap: 'circular'
+	                wrap: 'circular',
+			            transitions: Modernizr.csstransitions ? {
+	                transforms:   Modernizr.csstransforms,
+	                transforms3d: Modernizr.csstransforms3d,
+	                easing:       'ease'
+	            } : false
             });
 
         $('.jcarousel-control-prev')
@@ -60,22 +65,8 @@
         },
        threshold:0
     });
-
     $(function() {
 			FastClick.attach(document.body);
 		});
   });
-})(jQuery);
-
-(function($, Modernizr) {
-    $(function() {
-        $('.jcarousel').jcarousel({
-            wrap: 'circular',
-            transitions: Modernizr.csstransitions ? {
-                transforms:   Modernizr.csstransforms,
-                transforms3d: Modernizr.csstransforms3d,
-                easing:       'ease'
-            } : false
-        });
-    });
 })(jQuery, Modernizr);
