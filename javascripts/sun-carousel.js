@@ -66,3 +66,16 @@
 		});
   });
 })(jQuery);
+
+(function($, Modernizr) {
+    $(function() {
+        $('.jcarousel').jcarousel({
+            wrap: 'circular',
+            transitions: Modernizr.csstransitions ? {
+                transforms:   Modernizr.csstransforms,
+                transforms3d: Modernizr.csstransforms3d,
+                easing:       'ease'
+            } : false
+        });
+    });
+})(jQuery, Modernizr);
