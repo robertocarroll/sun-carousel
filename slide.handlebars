@@ -1,0 +1,16 @@
+{{#if slide-title}}<h2 class="slideshow-title">{{slide-title}}</h2>{{/if}}	
+    <div class="no-js" id="slide-images">
+        	<ul> 	
+					{{#images}}
+						<li>	
+					  	<a href="{{link}}" target="_parent"><img src="{{image}}" alt="{{title}}">
+							<h3 class="slide-title">{{title}}</h3>
+							</a>
+						</li>		    		
+					{{/images}}
+					</ul>
+    </div>
+
+	<a href="#" class="jcarousel-control-prev fade-in">&lsaquo;</a>
+	<a href="#" class="jcarousel-control-next fade-in">&rsaquo;</a>
+	<p class="jcarousel-pagination fade-in"></p>

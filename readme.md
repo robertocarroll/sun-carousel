@@ -4,6 +4,8 @@ A responsive carousel for The Sun website.
 2. Uses [TouchSwipe](http://labs.rampinteracitve.co.uk/touchSwipe/).
 3. Uses [Fastclick](https://github.com/ftlabs/fastclick).
 
-Inefficiencies
-1. Loading JQuery 
-2. Loading Open Sans font
+## Process
+1. data.json contains the slideshow details - Optional slideshow title, image title, image url and link.
+2. slide.handlebars is the Handlebars template which renders the json
+3. Run 'gulp' to process the css from styles to dist > css and the javascripts from javascripts to dist > javascripts
+4. An example of the static version is on the gh-pages branch  

@@ -25,7 +25,14 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility;
 }
 
-h1 {
+h2 {
+	 font-size: 2.6rem;
+   line-height: 2.8rem;
+   margin-bottom: 5px;
+   margin-left: 5px;
+}
+
+h3 {
 	font-size: 1.6rem;
 	line-height: 1.8rem;
 	letter-spacing: 0;
@@ -41,10 +48,11 @@ a {
 
 .jcarousel-wrapper {
     max-width: 1000px;
-    margin: auto;
     height: 300px;
     padding-left: 5px;
     padding-right: 5px;
+    margin: 5px auto 0px;
+    position: relative;
 }
 
 .jcarousel-wrapper > .no-js > ul {
@@ -78,11 +86,6 @@ a {
 
 .jcarousel li a:hover {
 	opacity: 0.9;
-}
-
-.jcarousel-wrapper {
-    margin: 10px auto 0px;
-    position: relative;
 }
 
 /** Carousel **/
@@ -121,19 +124,18 @@ a {
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    top: 45%;
-    margin-top: -15px;
-    width: 30px;
-    height: 30px;
+    top: 50%;
+    width: 1.5em;
+    height: 1.5em;
     text-align: center;
     @include alpha-attribute('background-color', rgba(black, 0.5), white);
     color: #fff;
     text-decoration: none;
     text-shadow: 0 0 1px #000;
-    font: 24px/27px "Open Sans",arial,helvetica;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+    font: 30px/39px "Open Sans",arial,helvetica;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    border-radius: 1.5em;
 
 }
 
@@ -152,27 +154,8 @@ a.jcarousel-control-prev:hover, .jcarousel-control-next:hover {
 /** Carousel Pagination **/
 
 .jcarousel-pagination {
-		width: 80%;
+		margin-top: 10px;
 		text-align: center;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    margin: 0;
-    bottom: 20px;
-
-    @media only screen and (min-width: 30em) {
-  		bottom: auto; 
-  	}
-
-  	@media only screen and (min-width: 48em) {
-  		bottom: 40px; 
-  	}
-
-  	@media only screen and (min-width: 62em) {
-  		bottom: 0px; 
-  	}
 }
 
 .jcarousel-pagination span {
